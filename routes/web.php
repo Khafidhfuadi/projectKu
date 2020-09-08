@@ -64,3 +64,10 @@ Route::get('/elements', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/forms', 'FormController@index');
+Route::post('/proses', 'FormController@proses');
+
+//calculator
+Route::get('/calculator', 'CalculatorController@index');
+Route::post('/operasi', 'CalculatorController@operasi');
